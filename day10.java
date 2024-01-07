@@ -27,18 +27,18 @@ class day10 {
                 sum = sum + 50;
             }
 
-            if(str.charAt(i)=='C'){
+            else if(str.charAt(i)=='C'){
                 if(i<=str.length()-2 && (str.charAt(i+1)=='D' || str.charAt(i+1)=='M'))
                     sum = sum - 100;
                 else
                     sum = sum + 100;
             }
 
-            if(str.charAt(i)=='D'){
+            else if(str.charAt(i)=='D'){
                 sum = sum + 500;
             }
 
-            if(str.charAt(i)=='M'){
+            else if(str.charAt(i)=='M'){
                 sum = sum + 1000;
             }
 
