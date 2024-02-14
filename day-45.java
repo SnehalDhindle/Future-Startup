@@ -6,10 +6,20 @@ class Day45 {
             return Integer.MAX_VALUE;                      //   since we are working with 32 bit signed integer                                                       
         }                                                  //    hence return 2147483647
 
+        if(dividend==Integer.MAX_VALUE && divisor== -1){   
+            return Integer.MIN_VALUE+1;                                                                           
+        }
+        if(divisor==1){
+           return dividend; 
+        }
+
+        if(divisor==-1 && dividend>0){
+            return -1*dividend; 
+        }
+
         if(dividend==divisor){
             return 1;
         }
-
         boolean sign = (dividend<0 ^ divisor<0);
 
         int dvd = Math.abs(dividend);
