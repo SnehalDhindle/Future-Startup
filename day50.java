@@ -1,8 +1,8 @@
 class Day50 {
 
     static boolean checkPerfectNumber(int num){
-        if(num%2!=0)                      //this condition is not necessary but all perfect numbers are even no. 
-            return false;                   //so it checks for that
+        if(num%2!=0)                      
+            return false;                   //all perfect numbers are even 
         
         int sum = 0;
         for(int i=1;i<=num/2;i++){
