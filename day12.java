@@ -1,3 +1,5 @@
+// after last word there should not be space
+
 class day12 {
 
     static int endWordLength(String str){
