@@ -1,3 +1,5 @@
+//monotonic means increasing or decresing array
+
 class Day55 {
 
     static boolean isMonotonic(int[] nums){
