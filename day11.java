@@ -11,7 +11,7 @@ public class day11 {
             int count = 1;
 
             for(int i=3;i<n;i++){
-
+                if(i%2!=0){
                 int fac = 0;
 
                 for(int j=1;j<=i;j++){
@@ -24,6 +24,7 @@ public class day11 {
 
                 if(fac==2)
                     count++;
+                }
             }
 
             return count;
