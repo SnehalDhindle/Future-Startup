@@ -39,7 +39,11 @@ class Day15 {
             
         }
 
-        return str;
+        if(rem!=0)
+            return rem+str;
+        else
+            return str;
+
 
         
 
