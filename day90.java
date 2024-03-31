@@ -13,11 +13,18 @@ class Day90 {
         Arrays.sort(arr1);
         Arrays.sort(arr2);
 
-        if(Arrays.toString(arr1).equals(Arrays.toString(arr2))){
+        // if(Arrays.toString(arr1).equals(Arrays.toString(arr2))){
+        //     return true;
+        // }else{
+        //     return false;
+        // }
+
+        if(Arrays.equals(arr1, arr2)){
             return true;
         }else{
             return false;
         }
+        
     }
    public static void main(String[] args){
     String s = "dog";
